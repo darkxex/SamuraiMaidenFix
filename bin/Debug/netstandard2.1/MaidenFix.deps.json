@@ -12,7 +12,6 @@
           "BepInEx.IL2CPP": "6.0.0-pre.1",
           "BepInEx.PluginInfoProps": "1.1.0",
           "Assembly-CSharp": "0.0.0.0",
-          "BepInEx.Preloader.Core": "6.0.0.0",
           "Coffee.UIParticle": "0.0.0.0",
           "com.rlabrecque.steamworks.net": "0.0.0.0",
           "CriMw.CriWare.Adxlipsync.Runtime": "0.0.0.0",
@@ -425,14 +424,6 @@
           "Assembly-CSharp.dll": {
             "assemblyVersion": "0.0.0.0",
             "fileVersion": "0.0.0.0"
-          }
-        }
-      },
-      "BepInEx.Preloader.Core/6.0.0.0": {
-        "runtime": {
-          "BepInEx.Preloader.Core.dll": {
-            "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.0.0.0"
           }
         }
       },
@@ -1620,11 +1611,6 @@
       "hashPath": "system.valuetuple.4.5.0.nupkg.sha512"
     },
     "Assembly-CSharp/0.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "BepInEx.Preloader.Core/6.0.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
