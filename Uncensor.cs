@@ -180,7 +180,15 @@ namespace MaidenFix
             {
                 this._skin = !this._skin;
             }
-
+            if (Keyboard.current[UnityEngine.InputSystem.Key.Digit7].wasPressedThisFrame)
+            {
+                this._cstm = false;
+                this._acce = false;
+                this._itemh = false;
+                this._iteml = false;
+                this._itemr = false;
+                this._skin = false;
+    }
         }
 
       
