@@ -31,6 +31,10 @@ namespace MaidenFix
         private bool _iteml = false;
         private bool _itemr = false;
         private bool _skin = false;
+        private bool _ling = false;
+        private bool _hair = false;
+        private bool _face = false;
+        private bool _eyes = false;
 
         private void Update()
         {
@@ -149,6 +153,66 @@ namespace MaidenFix
                     }
                 }
 
+                if (this._ling)
+                {
+                    if (secondaryAnimation_char.meshLing != null)
+                    {
+                        secondaryAnimation_char.meshLing.SetActive(false);
+                    }
+                }
+                else
+                {
+                    if (secondaryAnimation_char.meshLing != null)
+                    {
+                        secondaryAnimation_char.meshLing.SetActive(true);
+                    }
+                }
+
+                if (this._hair)
+                {
+                    if (secondaryAnimation_char.meshHair != null)
+                    {
+                        secondaryAnimation_char.meshHair.SetActive(false);
+                    }
+                }
+                else
+                {
+                    if (secondaryAnimation_char.meshHair != null)
+                    {
+                        secondaryAnimation_char.meshHair.SetActive(true);
+                    }
+                }
+
+                if (this._face)
+                {
+                    if (secondaryAnimation_char.meshFace != null)
+                    {
+                        secondaryAnimation_char.meshFace.SetActive(false);
+                    }
+                }
+                else
+                {
+                    if (secondaryAnimation_char.meshFace != null)
+                    {
+                        secondaryAnimation_char.meshFace.SetActive(true);
+                    }
+                }
+
+                if (this._eyes)
+                {
+                    if (secondaryAnimation_char.meshEyes != null)
+                    {
+                        secondaryAnimation_char.meshEyes.SetActive(false);
+                    }
+                }
+                else
+                {
+                    if (secondaryAnimation_char.meshEyes != null)
+                    {
+                        secondaryAnimation_char.meshEyes.SetActive(true);
+                    }
+                }
+
             }
             if (Keyboard.current[UnityEngine.InputSystem.Key.Delete].wasPressedThisFrame || Gamepad.current.selectButton.wasPressedThisFrame)
             {
@@ -182,12 +246,32 @@ namespace MaidenFix
             }
             if (Keyboard.current[UnityEngine.InputSystem.Key.Digit7].wasPressedThisFrame)
             {
+                this._ling = !this._ling;
+            }
+            if (Keyboard.current[UnityEngine.InputSystem.Key.Digit8].wasPressedThisFrame)
+            {
+                this._hair = !this._hair;
+            }
+            if (Keyboard.current[UnityEngine.InputSystem.Key.Digit9].wasPressedThisFrame)
+            {
+                this._face = !this._face;
+            }
+            if (Keyboard.current[UnityEngine.InputSystem.Key.Digit0].wasPressedThisFrame)
+            {
+                this._eyes = !this._eyes;
+            }
+            if (Keyboard.current[UnityEngine.InputSystem.Key.Backspace].wasPressedThisFrame || (Gamepad.current.leftStickButton.wasPressedThisFrame))
+            {
                 this._cstm = false;
                 this._acce = false;
                 this._itemh = false;
                 this._iteml = false;
                 this._itemr = false;
                 this._skin = false;
+                this._ling = false;
+                this._hair = false;
+                this._face = false;
+                this._eyes = false;
     }
         }
 
